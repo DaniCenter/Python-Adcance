@@ -11,6 +11,7 @@ def fibonacciGen(max=None):
         while count < max:
             temp = [i for i in range(2, n) if n % i == 0]
             aux = n
+            n += 1
             if not temp:
                 count += 1
                 yield aux
